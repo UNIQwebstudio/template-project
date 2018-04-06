@@ -1,0 +1,57 @@
+div.divider {
+  width: 100%;
+  height: 15px;
+  width: 100%;
+  // background: #ddd;
+}
+
+section#speaker {
+  // background: url('../assets/groovepaper.png');
+  // background: url('../assets/doodles.png');
+  position: relative;
+  height: calc(100% + 70vh);
+  box-shadow: 0 -50px 1000px -100px #009dff inset;
+
+  .left-side {
+    font-family: 'Didact Gothic', sans-serif;
+    width: calc(100% - 60vw);
+    position: relative;
+    float: left;
+    top: 25vh;
+    left: 10vw;
+
+    ul {
+      font-size: 14pt;
+      list-style: none;
+
+      li {
+        background: url('../assets/bullet01.png') 0 4px no-repeat;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        background-size: 15px;
+
+        &:nth-child(2n) {
+          background: url('../assets/bullet03.png') 0 4px no-repeat;
+          background-size: 15px;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    position: relative;
+    float: right;
+    top: 25vh;
+    right: 10vw;
+
+    div.image.speaker {
+      background: url('../assets/speaker.jpg');
+      height: 50vh;
+      width: 50vh;
+      border-radius: 100%;
+      background-size: cover;
+      position: relative;
+      box-shadow: 4px 4px 10px #ddd;
+    }
+  }
+}

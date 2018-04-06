@@ -1,0 +1,38 @@
+.block {
+  height: 100%;
+  width: 100%;
+
+  // &-text {
+  //
+  // }
+}
+
+section#intro {
+  background: url('../assets/bg.png');
+  background-size: cover;
+  box-shadow: 0px -200px 1000px -150px transparentize(#00b8ff, .55) inset;
+
+  .block-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40pt;
+    position: relative;
+    top: 30vh;
+    left: 10vw;
+    color: #545454;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+
+    span.free-webinar {
+      color: #6d91cc;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      font-size: 16pt;
+      position: relative;
+      top: 10pt;
+    }
+
+    span.detox {
+      color: #009dff;
+    }
+  }
+}

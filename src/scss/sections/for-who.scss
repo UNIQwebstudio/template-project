@@ -1,0 +1,72 @@
+section#for-who {
+  background: url('../assets/landscape.png');
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 150px 100px -150px rgba(0, 184, 255, 0.45) inset;
+  padding: 100px 15vw;
+  height: calc(100% - 200px);
+
+  h1.title, h2.subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40pt;
+    letter-spacing: 6px;
+    word-spacing: 2px;
+    color: #3e3e3e;
+    text-shadow: 3px 3px #eee;
+    margin: 0;
+    width: calc(100% - 30vw);
+    text-align: center;
+  }
+
+  h2.subtitle {
+    text-align: center;
+    font-size: 20pt;
+    letter-spacing: 3px;
+    color: #989898;
+    padding: 40px 0;
+    width: calc(100% - 30vw);
+  }
+
+  div.people-type {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 30vw);
+
+    &-item {
+      width: 250px;
+
+      div.image {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        border: 1px dashed white;
+        // box-shadow: 4px 4px 10px #ddd;
+
+        &.tired {
+          background: url('../assets/for-who/tired.jpg');
+          background-size: cover;
+          background-position: center center;
+        }
+
+        &.breath {
+          background: url('../assets/for-who/breath.jpg');
+          background-size: cover;
+          background-position: center center;
+        }
+
+        &.support {
+          background: url('../assets/for-who/support.jpg');
+          background-size: cover;
+          background-position: right center;
+        }
+      }
+
+      p.text {
+        font-family: 'Didact Gothic', sans-serif;
+        color: #232323;
+        font-size: 14pt;
+        padding: 10px;
+      }
+    }
+  }
+}
